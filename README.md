@@ -21,8 +21,8 @@ A small interactive Bash script for managing GRE tunnels on Ubuntu/Debian server
 ## Run
 
 ```bash
-chmod +x netpars-gre-manager.sh
-sudo ./netpars-gre-manager.sh
+chmod +x petex-gre-manager.sh
+sudo ./petex-gre-manager.sh
 ```
 
 Run the same script separately on both ends, using the opposite public IP and opposite side selection.
