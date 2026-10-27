@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-# Netpars GRE Tunnel Manager
+# petex GRE Tunnel Manager
 # - Creates one GRE tunnel from a predefined list of 10 inner-IP pairs.
 # - Supports manual testing by the user.
 # - Can persist the CURRENT live tunnel with a systemd unit.
@@ -9,7 +9,7 @@ set -Eeuo pipefail
 #
 # Ubuntu/Debian: requires iproute2 and systemd.
 
-SCRIPT_NAME="Netpars GRE Tunnel Manager"
+SCRIPT_NAME="petex GRE Tunnel Manager"
 BASE_SYSTEMD_DIR="/etc/systemd/system"
 
 RED='\033[0;31m'
@@ -58,7 +58,7 @@ valid_tunnel_name() {
 
 unit_name_for() {
     local tunnel=$1
-    printf 'netpars-gre-%s.service' "$tunnel"
+    printf 'petex-gre-%s.service' "$tunnel"
 }
 
 unit_path_for() {
@@ -233,7 +233,7 @@ make_current_permanent() {
 
     cat > "$unit_path" <<EOF_UNIT
 [Unit]
-Description=Netpars GRE tunnel $TUNNEL_NAME
+Description=petex GRE tunnel $TUNNEL_NAME
 After=network-online.target
 Wants=network-online.target
 
