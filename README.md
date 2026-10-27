@@ -1,4 +1,4 @@
-# Netpars GRE Tunnel Manager
+# GRE Tunnel Manager
 
 A small interactive Bash script for managing GRE tunnels on Ubuntu/Debian servers.
 
