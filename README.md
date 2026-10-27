@@ -31,14 +31,14 @@ Run the same script separately on both ends, using the opposite public IP and op
 
 ### Iran server
 
-- Remote public IP: `109.71.252.172`
+- Remote public IP: `100.70.250.10`
 - Tunnel: `ge4`
 - Side: `Iran`
 - Pair: `10.24.20.1 <-> 10.24.20.2`
 
 ### Europe server
 
-- Remote public IP: `81.30.108.166`
+- Remote public IP: `81.82.83.4`
 - Tunnel: `ge4`
 - Side: `Europe`
 - Pair: `10.24.20.1 <-> 10.24.20.2`
